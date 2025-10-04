@@ -15,7 +15,6 @@ public class PowerUpPickUp : MonoBehaviour
 
     public void ActivatePowerUp(PlayerController playerController)
     {
-        Destroy(gameObject);
         playerController.ApplyPowerUpModifier(powerUpModifier);
     }
      void Update()

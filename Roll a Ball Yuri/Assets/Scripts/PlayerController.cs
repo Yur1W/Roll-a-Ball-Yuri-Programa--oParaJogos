@@ -22,8 +22,10 @@ public class PlayerController : GameController
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Pick Up")
-        {
+        {   
+            pontos++;
             other.gameObject.SetActive(false);
+            
         }
         if (other.gameObject.CompareTag("Enemy"))
         {   
@@ -51,7 +53,7 @@ public class PlayerController : GameController
     {
         if (podeComer == true)
         {
-            pontos++;
+            pontos = pontos + 2;
             Destroy(other);  
         }
     }

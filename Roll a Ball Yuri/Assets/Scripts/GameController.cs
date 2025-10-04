@@ -8,7 +8,8 @@ public class GameController : MonoBehaviour
     protected float pickupSpawned = 0;
     [Header ("Game State")]
     protected float tempo = 180;
-    protected float pontos;
+    [SerializeField]
+    protected static float pontos;
     
     [Header("UI")]
     [SerializeField]
@@ -19,14 +20,14 @@ public class GameController : MonoBehaviour
     void Start()
     {
         pontos = 0;
-        SetCountText();
         winTextObject.SetActive(false);
     }
 
 
     void Update()
     {
-        tempo = (1 * Time.deltaTime) - tempo;
+        tempo = (1 * Time.deltaTime) - tempo;  
+        SetCountText();   
     }
 
     private void SetCountText()

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Kirby!
+* source:	https://sketchfab.com/3d-models/kirby-c3775cf32cf04d3d9940938ff78dc574
+* author:	MarshM (https://sketchfab.com/limbi1)
+
+Model License:
+* license type:	CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)
+* requirements:	Author must be credited. Modified versions must have the same license. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Kirby!" (https://sketchfab.com/3d-models/kirby-c3775cf32cf04d3d9940938ff78dc574) by MarshM (https://sketchfab.com/limbi1) licensed under CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)

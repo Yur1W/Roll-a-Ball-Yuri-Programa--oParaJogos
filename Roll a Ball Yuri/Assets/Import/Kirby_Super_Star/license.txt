@@ -1,0 +1,11 @@
+Model Information:
+* title:	Kirby Super Star
+* source:	https://sketchfab.com/3d-models/kirby-super-star-5dab4d969f294704973230839567ff05
+* author:	Business boy (https://sketchfab.com/Baboyo)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Kirby Super Star" (https://sketchfab.com/3d-models/kirby-super-star-5dab4d969f294704973230839567ff05) by Business boy (https://sketchfab.com/Baboyo) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

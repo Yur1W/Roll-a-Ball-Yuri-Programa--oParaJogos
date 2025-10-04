@@ -33,7 +33,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 6041693959524630687}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2547451879446927341
@@ -51,7 +52,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 755697604458190348}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -155,3 +156,77 @@ MonoBehaviour:
   rb: {fileID: 0}
   velocidade: 2.5
   podeComer: 0
+--- !u!1001 &2930542347141353842
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1455830856252613002}
+    m_Modifications:
+    - target: {fileID: 7584791323980954386, guid: 6778f05c90a6dd143b5484ac87131c1c, type: 3}
+      propertyPath: m_Name
+      value: Kirby_Super_Star
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895462595332362733, guid: 6778f05c90a6dd143b5484ac87131c1c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.054247
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895462595332362733, guid: 6778f05c90a6dd143b5484ac87131c1c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.054247
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895462595332362733, guid: 6778f05c90a6dd143b5484ac87131c1c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.054247
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895462595332362733, guid: 6778f05c90a6dd143b5484ac87131c1c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.82102835
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895462595332362733, guid: 6778f05c90a6dd143b5484ac87131c1c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.29139608
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895462595332362733, guid: 6778f05c90a6dd143b5484ac87131c1c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.2336684
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895462595332362733, guid: 6778f05c90a6dd143b5484ac87131c1c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.97460574
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895462595332362733, guid: 6778f05c90a6dd143b5484ac87131c1c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.05992467
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895462595332362733, guid: 6778f05c90a6dd143b5484ac87131c1c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.13604929
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895462595332362733, guid: 6778f05c90a6dd143b5484ac87131c1c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.16746147
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895462595332362733, guid: 6778f05c90a6dd143b5484ac87131c1c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 9.345
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895462595332362733, guid: 6778f05c90a6dd143b5484ac87131c1c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -14.384
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895462595332362733, guid: 6778f05c90a6dd143b5484ac87131c1c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 18.318
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6778f05c90a6dd143b5484ac87131c1c, type: 3}
+--- !u!4 &6041693959524630687 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8895462595332362733, guid: 6778f05c90a6dd143b5484ac87131c1c, type: 3}
+  m_PrefabInstance: {fileID: 2930542347141353842}
+  m_PrefabAsset: {fileID: 0}

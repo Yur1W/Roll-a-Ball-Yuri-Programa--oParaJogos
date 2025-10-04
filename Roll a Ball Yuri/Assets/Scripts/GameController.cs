@@ -3,13 +3,15 @@ using TMPro;
 
 public class GameController : MonoBehaviour
 {   [Header("Spawns")]
-    [SerializeReference]
-    protected float enemySpawned = 0;
+    [SerializeField]
+    public float enemySpawned
+    { get; set;}
     protected float pickupSpawned = 0;
     [Header ("Game State")]
     protected float tempo = 180;
     [SerializeField]
     protected static float pontos;
+    public static bool playerAlive;
     
     [Header("UI")]
     [SerializeField]

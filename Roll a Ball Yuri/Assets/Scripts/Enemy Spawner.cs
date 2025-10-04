@@ -1,12 +1,18 @@
 using UnityEngine;
 
-public class EnemySpawner : GameController
+public class EnemySpawner : MonoBehaviour
 {
     [SerializeField]
     GameObject enemyPrefab;
+    GameController gameController;
+
+    void Start()
+    {
+        gameController = GameObject.Find("GameController").GetComponent<GameController>();
+    }
     void Update()
     {
-        if (enemySpawned < 3)
+        if (gameController.enemySpawned < 3)
         {
             SpawnEnemy();
         }
@@ -17,6 +23,6 @@ public class EnemySpawner : GameController
         float randomSpawnX = UnityEngine.Random.Range(-6, 13);
         float randomSpawnZ = UnityEngine.Random.Range(-0.5f, 18);
         Instantiate(enemyPrefab, transform.position, Quaternion.identity);
-        enemySpawned++;
+        gameController.enemySpawned++;
     }
 }

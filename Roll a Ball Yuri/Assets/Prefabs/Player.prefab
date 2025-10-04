@@ -19,8 +19,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 0
 --- !u!4 &1455830856252613002
 Transform:
   m_ObjectHideFlags: 0
@@ -150,7 +150,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a552596c9219d54b8a31fffb64cdc71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpawned: 0
   pontosText: {fileID: 0}
   winTextObject: {fileID: 0}
   rb: {fileID: 0}

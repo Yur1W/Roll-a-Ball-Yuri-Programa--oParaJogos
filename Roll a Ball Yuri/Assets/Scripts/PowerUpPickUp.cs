@@ -19,6 +19,7 @@ public class PowerUpPickUp : MonoBehaviour
     }
      void Update()
     {
-        transform.Rotate(new Vector3(Random.Range(10, 45), Random.Range(25, 60), Random.Range(40, 75))* Time.deltaTime);
+        transform.Rotate(new Vector3(0f, 90, 0f) * Time.deltaTime);
+        //transform.Rotate(new Vector3(15, 30, 45) * Time.deltaTime);
     }
 }

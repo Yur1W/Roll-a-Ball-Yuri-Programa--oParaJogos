@@ -4,7 +4,7 @@ using TMPro;
 public class GameController : MonoBehaviour
 {   [Header("Spawns")]
     [SerializeField]
-    public float enemySpawned
+    public static float enemySpawned
     { get; set;}
     protected float pickupSpawned = 0;
     [Header ("Game State")]

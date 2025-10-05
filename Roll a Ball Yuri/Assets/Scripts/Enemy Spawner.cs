@@ -11,8 +11,9 @@ public class EnemySpawner : MonoBehaviour
         gameController = GameObject.Find("GameController").GetComponent<GameController>();
     }
     void Update()
-    {
-        if (gameController.enemySpawned < 3)
+    {   
+        gameController = GameObject.Find("GameController").GetComponent<GameController>();
+        if (GameController.enemySpawned < 3)
         {
             SpawnEnemy();
         }
@@ -20,9 +21,9 @@ public class EnemySpawner : MonoBehaviour
 
     void SpawnEnemy()
     {
-        float randomSpawnX = UnityEngine.Random.Range(-6, 13);
-        float randomSpawnZ = UnityEngine.Random.Range(-0.5f, 18);
+        //float randomSpawnX = UnityEngine.Random.Range(-6, 13);
+        //float randomSpawnZ = UnityEngine.Random.Range(-0.5f, 18);
         Instantiate(enemyPrefab, transform.position, Quaternion.identity);
-        gameController.enemySpawned++;
+        GameController.enemySpawned++;
     }
 }

@@ -8,6 +8,8 @@ public class PlayerController : GameController
     [SerializeField]
     public float velocidade = 5f;
     public bool podeComer = false;
+    public float duraçaoPowerup = 1f;
+    float timer;
 
     void Start()
     {
@@ -18,6 +20,7 @@ public class PlayerController : GameController
     void Update()
     {
         movement();
+        ComerDuration();
 
     }
     void OnTriggerEnter(Collider other)
@@ -29,16 +32,18 @@ public class PlayerController : GameController
             
         }
         if (other.gameObject.CompareTag("Enemy"))
-        {   
-            GameObject enemy = other.gameObject.GetComponent<GameObject>();
+        {
+            GameObject enemy = other.gameObject;
             comer(enemy);
+            enemySpawned--;
         }
         if (other.gameObject.CompareTag("Enemy") && !podeComer)
         {
             var gameOver = winTextObject.GetComponent<TextMeshProUGUI>();
             gameOver.text = "Game Over!";
             winTextObject.SetActive(true);
-            Destroy(gameObject);
+            gameObject.SetActive(false);
+            this.enabled = false;
         }
     }
 
@@ -55,7 +60,20 @@ public class PlayerController : GameController
         if (podeComer == true)
         {
             pontos = pontos + 2;
-            Destroy(other);  
+            Destroy(other);
+        }
+        
+    }
+    void ComerDuration()
+    {
+        if (podeComer)
+        {
+            timer += Time.deltaTime;
+            if (timer >= duraçaoPowerup)
+            {
+                podeComer = false;
+                timer = 0;
+            }
         }
     }
 

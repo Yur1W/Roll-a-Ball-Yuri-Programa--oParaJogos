@@ -22,6 +22,7 @@ public class PlayerController : GameController
     {
         movement();
         ComerDuration();
+        WinParticle();
 
     }
     void OnTriggerEnter(Collider other)
@@ -47,7 +48,13 @@ public class PlayerController : GameController
             this.enabled = false;
         }
     }
-
+    void WinParticle()
+    {
+        if (pontos >= 12)
+        {
+            GetComponent<ParticleSystem>().Play();
+        }
+    }
     void movement()
     {
         float movimentoHorizontal = Input.GetAxis("Horizontal");

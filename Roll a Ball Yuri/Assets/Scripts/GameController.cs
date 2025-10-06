@@ -41,7 +41,6 @@ public class GameController : MonoBehaviour
         if (pontos >= 12)
         {
             winTextObject.SetActive(true);
-            player.GetComponent<ParticleSystem>().Play();
         }
     }
 

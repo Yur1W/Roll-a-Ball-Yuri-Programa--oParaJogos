@@ -15,6 +15,7 @@ public class PlayerController : GameController
     {
         rb = GetComponent<Rigidbody>();
         gameObject.SetActive(true);
+        
 
     }
     void Update()

@@ -29,6 +29,10 @@ public class Enemy : MonoBehaviour
             Debug.Log("player null");
             return;
         }
+        if (gameController.winTextObject.activeSelf == true)
+        {
+            this.enabled = false;
+        }
 
         
         transform.position = Vector3.MoveTowards(transform.position, player.transform.position, enemySpeed * Time.deltaTime);

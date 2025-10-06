@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour
     [SerializeField]
     protected static float pontos;
     public static bool playerAlive;
+    GameObject player;
     
     [Header("UI")]
     [SerializeField]
@@ -21,6 +22,7 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
+        player = GameObject.Find("Player");
         pontos = 0;
         winTextObject.SetActive(false);
     }
@@ -28,6 +30,7 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
+        
         tempo = (1 * Time.deltaTime) - tempo;  
         SetCountText();   
     }
@@ -38,6 +41,7 @@ public class GameController : MonoBehaviour
         if (pontos >= 12)
         {
             winTextObject.SetActive(true);
+            player.GetComponent<ParticleSystem>().Play();
         }
     }
 
